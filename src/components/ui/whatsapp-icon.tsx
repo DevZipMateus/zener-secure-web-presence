@@ -7,7 +7,7 @@ interface WhatsAppIconProps {
 const WhatsAppIcon = ({ size = 24, className = "" }: WhatsAppIconProps) => {
   return (
     <img 
-      src="/lovable-uploads/98189a81-fee6-476d-ae0d-155998c3ee5a.png" 
+      src="/lovable-uploads/46673b62-f37a-4b41-be5c-2a041dbdacaf.png" 
       alt="WhatsApp" 
       width={size} 
       height={size}
