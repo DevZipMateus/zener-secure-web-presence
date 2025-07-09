@@ -1,4 +1,3 @@
-
 import { Shield, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -13,19 +12,30 @@ const HeroSection = () => {
   return (
     <section 
       id="inicio" 
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-zener-primary-light to-zener-primary-dark text-white relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/lovable-uploads/5547635b-8eea-4387-8a51-d9b7c86eff71.png')"
+        }}
+      />
+      
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/50" />
+
+      {/* Background Pattern - keeping the original pattern as additional overlay */}
+      <div className="absolute inset-0 opacity-5">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-white rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-white rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
-          <Shield className="w-20 h-20 mx-auto mb-6 text-white/90" />
+          <Shield className="w-20 h-20 mx-auto mb-6 text-white" />
           
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white">
             ZENER<br />
             <span className="text-zener-primary-light">Fortalecendo a Sua Segurança</span>
           </h1>
@@ -39,7 +49,7 @@ const HeroSection = () => {
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="bg-white text-zener-primary-dark hover:bg-white/90 font-semibold px-8 py-6 text-lg"
+              className="bg-zener-primary text-white hover:bg-zener-primary-dark font-semibold px-8 py-6 text-lg"
             >
               Solicitar Orçamento
               <ArrowRight className="ml-2 w-5 h-5" />
