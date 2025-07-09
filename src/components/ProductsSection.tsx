@@ -51,6 +51,16 @@ const ProductsSection = () => {
       image: "/lovable-uploads/d91b7f7e-e6ad-4af0-bd30-863bca6bf110.png",
       title: "Vídeo Porteiro",
       description: "Vídeo porteiro com tela colorida e visão noturna para máxima segurança."
+    },
+    {
+      image: "/lovable-uploads/98189a81-fee6-476d-ae0d-155998c3ee5a.png",
+      title: "Instalação Elétrica",
+      description: "Serviços de instalação elétrica predial e residencial com qualidade profissional."
+    },
+    {
+      image: "/lovable-uploads/687649d6-610a-4c81-96cd-b5087d271840.png",
+      title: "Fio para Cerca Elétrica",
+      description: "Fio específico para cerca elétrica com alta resistência e isolamento."
     }
   ];
 
