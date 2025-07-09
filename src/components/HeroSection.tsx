@@ -1,26 +1,19 @@
 import { Shield, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const HeroSection = () => {
   const scrollToContact = () => {
     const element = document.getElementById("contato");
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({
+        behavior: "smooth"
+      });
     }
   };
-
-  return (
-    <section 
-      id="inicio" 
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
-    >
+  return <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/lovable-uploads/5547635b-8eea-4387-8a51-d9b7c86eff71.png')"
-        }}
-      />
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: "url('/lovable-uploads/5547635b-8eea-4387-8a51-d9b7c86eff71.png')"
+    }} />
       
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-black/50" />
@@ -46,28 +39,19 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              onClick={scrollToContact}
-              size="lg"
-              className="bg-zener-primary text-white hover:bg-zener-primary-dark font-semibold px-8 py-6 text-lg"
-            >
+            <Button onClick={scrollToContact} size="lg" className="bg-zener-primary text-white hover:bg-zener-primary-dark font-semibold px-8 py-6 text-lg">
               Solicitar Orçamento
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-white text-white hover:bg-white hover:text-zener-primary-dark font-semibold px-8 py-6 text-lg"
-              onClick={() => document.getElementById("servicos")?.scrollIntoView({ behavior: "smooth" })}
-            >
+            <Button variant="outline" size="lg" onClick={() => document.getElementById("servicos")?.scrollIntoView({
+            behavior: "smooth"
+          })} className="border-white text-white hover:text-zener-primary-dark font-semibold px-8 py-6 text-lg bg-green-600 hover:bg-green-500">
               Nossos Serviços
             </Button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
