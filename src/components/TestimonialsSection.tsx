@@ -1,5 +1,7 @@
+
 import { Star, Quote } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import WhatsAppIcon from "@/components/ui/whatsapp-icon";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -88,6 +90,7 @@ const TestimonialsSection = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
             >
+              <WhatsAppIcon size={20} className="mr-2" />
               Deixe seu depoimento
             </a>
           </div>

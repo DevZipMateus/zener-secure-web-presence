@@ -1,10 +1,12 @@
+
 import { useState } from "react";
-import { Mail, Phone, MessageSquare, Send } from "lucide-react";
+import { Mail, Phone, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
+import WhatsAppIcon from "@/components/ui/whatsapp-icon";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -65,7 +67,7 @@ Mensagem: ${formData.message}`;
       action: () => window.open("mailto:zener_segurancaeletronica@hotmail.com")
     },
     {
-      icon: <MessageSquare className="w-6 h-6 text-primary" />,
+      icon: <WhatsAppIcon size={24} className="text-primary" />,
       title: "WhatsApp",
       description: "Chat direto conosco",
       action: () => window.open("https://wa.me/5514998332104?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20ZENER%20Segurança%20Eletrônica.")

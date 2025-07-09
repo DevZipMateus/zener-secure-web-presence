@@ -1,5 +1,6 @@
-import { MessageCircle } from "lucide-react";
+
 import { Button } from "@/components/ui/button";
+import WhatsAppIcon from "@/components/ui/whatsapp-icon";
 
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
@@ -12,10 +13,10 @@ const WhatsAppButton = () => {
   return (
     <Button
       onClick={handleWhatsAppClick}
-      className="fixed bottom-6 right-6 z-50 bg-zener-success hover:bg-zener-success/90 text-white rounded-full w-14 h-14 shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse"
+      className="fixed bottom-6 right-6 z-50 bg-zener-success hover:bg-zener-success/90 text-white rounded-full w-14 h-14 shadow-lg hover:shadow-xl transition-all duration-300 animate-[pulse_4s_ease-in-out_infinite]"
       size="icon"
     >
-      <MessageCircle size={24} />
+      <WhatsAppIcon size={24} />
     </Button>
   );
 };
