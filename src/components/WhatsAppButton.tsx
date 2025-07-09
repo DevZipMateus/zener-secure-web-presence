@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "5511999999999"; // Replace with actual number
+    const phoneNumber = "5514998332104"; // ZENER WhatsApp number
     const message = "Olá! Gostaria de saber mais sobre os serviços da ZENER Segurança Eletrônica.";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");

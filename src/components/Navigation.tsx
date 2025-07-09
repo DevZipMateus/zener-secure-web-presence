@@ -19,7 +19,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/logo-zener.png" 
+              src="/lovable-uploads/81025338-ee79-42d7-b5ad-e298125ef00d.png" 
               alt="ZENER Segurança Eletrônica"
               className="h-8"
             />
@@ -45,6 +45,12 @@ const Navigation = () => {
               className="text-foreground hover:text-primary transition-colors"
             >
               Serviços
+            </button>
+            <button
+              onClick={() => scrollToSection("depoimentos")}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Depoimentos
             </button>
             <button
               onClick={() => scrollToSection("localizacao")}
@@ -92,6 +98,12 @@ const Navigation = () => {
                 className="text-left py-2 text-foreground hover:text-primary transition-colors"
               >
                 Serviços
+              </button>
+              <button
+                onClick={() => scrollToSection("depoimentos")}
+                className="text-left py-2 text-foreground hover:text-primary transition-colors"
+              >
+                Depoimentos
               </button>
               <button
                 onClick={() => scrollToSection("localizacao")}

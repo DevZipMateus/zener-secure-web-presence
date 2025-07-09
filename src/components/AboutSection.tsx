@@ -1,22 +1,22 @@
-import { CheckCircle, Award, Users, Clock } from "lucide-react";
+import { CheckCircle, Award, Users, Shield } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const AboutSection = () => {
   const stats = [
     {
-      icon: <Clock className="w-8 h-8 text-zener-blue" />,
-      title: "20+ Anos",
-      description: "De experiência no mercado"
+      icon: <Shield className="w-8 h-8 text-primary" />,
+      title: "Empresa Sólida",
+      description: "Atuação consolidada no mercado"
     },
     {
-      icon: <Users className="w-8 h-8 text-zener-blue" />,
-      title: "1000+ Clientes",
-      description: "Satisfeitos em toda São Paulo"
+      icon: <Users className="w-8 h-8 text-primary" />,
+      title: "Atendimento Completo",
+      description: "Residências, comércios e indústrias"
     },
     {
-      icon: <Award className="w-8 h-8 text-zener-blue" />,
-      title: "Certificações",
-      description: "Profissionais qualificados"
+      icon: <Award className="w-8 h-8 text-primary" />,
+      title: "Produtos Inovadores",
+      description: "Tecnologia de ponta em segurança"
     }
   ];
 
@@ -29,35 +29,35 @@ const AboutSection = () => {
               Sobre a ZENER
             </h2>
             <p className="text-xl text-zener-gray max-w-2xl mx-auto">
-              Líder em segurança eletrônica, oferecendo proteção completa com tecnologia de ponta
+              Empresa sólida especializada em segurança eletrônica e elétrica para total proteção
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-6">
-                Nossa História
+                Nossa Missão
               </h3>
               <p className="text-zener-gray leading-relaxed mb-6">
-                Fundada em 2003, a ZENER Segurança Eletrônica nasceu com o compromisso de oferecer 
-                soluções completas em segurança eletrônica para residências e empresas. 
-                Ao longo de mais de 20 anos, construímos uma reputação sólida baseada na 
-                qualidade, confiabilidade e atendimento personalizado.
+                A ZENER é uma empresa sólida que atua no controle de segurança eletrônica e elétrica 
+                para indústrias, comércios, residências e condomínios em Bauru e região.
               </p>
               <p className="text-zener-gray leading-relaxed">
-                Nossa equipe altamente qualificada utiliza as tecnologias mais avançadas do mercado, 
-                garantindo proteção eficaz e tranquilidade para nossos clientes em toda a Grande São Paulo.
+                Nosso principal objetivo é promover soluções integradas em sistemas de segurança, 
+                através de produtos inovadores e flexibilidade em seus processos, garantindo 
+                total tranquilidade aos nossos clientes.
               </p>
             </div>
 
             <div className="space-y-4">
               {[
-                "Instalação e manutenção de câmeras de segurança",
-                "Sistemas de alarme residencial e empresarial",
-                "Controle de acesso biométrico",
-                "Monitoramento 24 horas",
-                "Automação residencial",
-                "Suporte técnico especializado"
+                "Sistema de alarme residencial e empresarial",
+                "Sistema de câmera (CFTV) de alta qualidade",
+                "Automatização de portão eletrônico",
+                "Fechadura elétrica moderna",
+                "Cerca elétrica para perímetro",
+                "Interfone e vídeo porteiro",
+                "Eletricista residencial e predial"
               ].map((item, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-zener-success flex-shrink-0" />

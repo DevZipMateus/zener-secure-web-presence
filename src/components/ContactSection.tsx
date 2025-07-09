@@ -18,10 +18,21 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Simulate form submission
+    // Create WhatsApp message with form data
+    const whatsappMessage = `Olá! Gostaria de solicitar um orçamento para segurança eletrônica.
+    
+Nome: ${formData.name}
+Email: ${formData.email}
+Telefone: ${formData.phone}
+Mensagem: ${formData.message}`;
+    
+    const whatsappUrl = `https://wa.me/5514998332104?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappUrl, '_blank');
+    
+    // Show success toast
     toast({
-      title: "Mensagem enviada!",
-      description: "Entraremos em contato em breve.",
+      title: "Redirecionando para WhatsApp!",
+      description: "Você será redirecionado para conversar conosco.",
     });
     
     // Reset form
@@ -42,22 +53,22 @@ const ContactSection = () => {
 
   const contactMethods = [
     {
-      icon: <Phone className="w-6 h-6 text-zener-blue" />,
+      icon: <Phone className="w-6 h-6 text-primary" />,
       title: "Telefone",
-      description: "(11) 99999-9999",
-      action: () => window.open("tel:+5511999999999")
+      description: "(14) 99833-2104",
+      action: () => window.open("tel:+5514998332104")
     },
     {
-      icon: <Mail className="w-6 h-6 text-zener-blue" />,
+      icon: <Mail className="w-6 h-6 text-primary" />,
       title: "E-mail",
-      description: "contato@zenerseguranca.com.br",
-      action: () => window.open("mailto:contato@zenerseguranca.com.br")
+      description: "zener_segurancaeletronica@hotmail.com",
+      action: () => window.open("mailto:zener_segurancaeletronica@hotmail.com")
     },
     {
-      icon: <MessageSquare className="w-6 h-6 text-zener-blue" />,
+      icon: <MessageSquare className="w-6 h-6 text-primary" />,
       title: "WhatsApp",
       description: "Chat direto conosco",
-      action: () => window.open("https://wa.me/5511999999999")
+      action: () => window.open("https://wa.me/5514998332104?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20ZENER%20Segurança%20Eletrônica.")
     }
   ];
 
@@ -70,7 +81,7 @@ const ContactSection = () => {
               Entre em Contato
             </h2>
             <p className="text-xl text-zener-gray max-w-2xl mx-auto">
-              Solicite seu orçamento gratuito e descubra como podemos proteger seu patrimônio
+              Solicite seu orçamento gratuito e descubra como podemos fortalecer a sua segurança
             </p>
           </div>
 
@@ -121,7 +132,7 @@ const ContactSection = () => {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="border-zener-gray-light focus:border-zener-blue"
+                        className="border-zener-gray-light focus:border-primary"
                       />
                     </div>
 
@@ -133,7 +144,7 @@ const ContactSection = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="border-zener-gray-light focus:border-zener-blue"
+                        className="border-zener-gray-light focus:border-primary"
                       />
                     </div>
 
@@ -144,7 +155,7 @@ const ContactSection = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         required
-                        className="border-zener-gray-light focus:border-zener-blue"
+                        className="border-zener-gray-light focus:border-primary"
                       />
                     </div>
 
@@ -156,16 +167,16 @@ const ContactSection = () => {
                         onChange={handleChange}
                         required
                         rows={4}
-                        className="border-zener-gray-light focus:border-zener-blue"
+                        className="border-zener-gray-light focus:border-primary"
                       />
                     </div>
 
                     <Button
                       type="submit"
-                      className="w-full bg-zener-blue hover:bg-zener-blue-dark text-white py-3"
+                      className="w-full bg-primary hover:bg-primary/90 text-white py-3"
                     >
                       <Send className="w-4 h-4 mr-2" />
-                      Enviar Mensagem
+                      Enviar via WhatsApp
                     </Button>
                   </form>
                 </CardContent>

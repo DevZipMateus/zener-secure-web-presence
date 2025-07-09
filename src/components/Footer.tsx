@@ -13,9 +13,9 @@ const Footer = () => {
                 <span className="text-2xl font-bold">ZENER</span>
               </div>
               <p className="text-gray-300 leading-relaxed mb-6">
-                Mais de 20 anos protegendo residências e empresas em São Paulo com 
-                soluções completas em segurança eletrônica. Tecnologia de ponta, 
-                atendimento personalizado e suporte 24 horas.
+                A ZENER é uma empresa sólida que atua no controle de segurança eletrônica e elétrica 
+                para indústrias, comércios, residências e condomínios em Bauru e região. 
+                Nosso objetivo é promover soluções integradas com produtos inovadores.
               </p>
             </div>
 
@@ -64,17 +64,17 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Phone className="w-4 h-4 text-gray-300" />
-                  <span className="text-gray-300">(11) 99999-9999</span>
+                  <span className="text-gray-300">(14) 99833-2104</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-4 h-4 text-gray-300" />
-                  <span className="text-gray-300">contato@zenerseguranca.com.br</span>
+                  <span className="text-gray-300">zener_segurancaeletronica@hotmail.com</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-4 h-4 text-gray-300 mt-1 flex-shrink-0" />
                   <span className="text-gray-300">
-                    Rua Exemplo, 123<br />
-                    São Paulo - SP
+                    Rua Antonio Hojas, 1-105<br />
+                    Jardim Helena - Bauru/SP
                   </span>
                 </div>
               </div>

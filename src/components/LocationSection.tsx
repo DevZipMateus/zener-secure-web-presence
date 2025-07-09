@@ -11,7 +11,7 @@ const LocationSection = () => {
               Nossa Localização
             </h2>
             <p className="text-xl text-zener-gray max-w-2xl mx-auto">
-              Estamos localizados em São Paulo, atendendo toda a Grande São Paulo
+              Estamos localizados em Bauru, atendendo toda a região com excelência
             </p>
           </div>
 
@@ -20,15 +20,15 @@ const LocationSection = () => {
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
-                    <MapPin className="w-6 h-6 text-zener-blue flex-shrink-0 mt-1" />
+                    <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="text-lg font-semibold text-foreground mb-2">
                         Endereço
                       </h3>
                       <p className="text-zener-gray">
-                        Rua Exemplo, 123<br />
-                        Bairro Exemplo - São Paulo, SP<br />
-                        CEP: 01234-567
+                        Rua Antonio Hojas, 1-105<br />
+                        Jardim Helena - Bauru, SP<br />
+                        CEP: 17033-260
                       </p>
                     </div>
                   </div>
@@ -38,14 +38,14 @@ const LocationSection = () => {
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
-                    <Phone className="w-6 h-6 text-zener-blue flex-shrink-0 mt-1" />
+                    <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="text-lg font-semibold text-foreground mb-2">
                         Telefone
                       </h3>
                       <p className="text-zener-gray">
-                        (11) 99999-9999<br />
-                        (11) 3333-3333
+                        (14) 99833-2104<br />
+                        WhatsApp disponível
                       </p>
                     </div>
                   </div>
@@ -55,13 +55,13 @@ const LocationSection = () => {
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
-                    <Mail className="w-6 h-6 text-zener-blue flex-shrink-0 mt-1" />
+                    <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="text-lg font-semibold text-foreground mb-2">
                         E-mail
                       </h3>
                       <p className="text-zener-gray">
-                        contato@zenerseguranca.com.br
+                        zener_segurancaeletronica@hotmail.com
                       </p>
                     </div>
                   </div>
@@ -71,7 +71,7 @@ const LocationSection = () => {
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
-                    <Clock className="w-6 h-6 text-zener-blue flex-shrink-0 mt-1" />
+                    <Clock className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="text-lg font-semibold text-foreground mb-2">
                         Horário de Atendimento
@@ -90,23 +90,32 @@ const LocationSection = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="aspect-square bg-zener-gray-light flex items-center justify-center">
                 <div className="text-center">
-                  <MapPin className="w-16 h-16 text-zener-blue mx-auto mb-4" />
-                  <p className="text-zener-gray">Mapa em breve</p>
+                  <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
+                  <p className="text-zener-gray">Mapa Interativo</p>
                   <p className="text-sm text-zener-gray mt-2">
-                    Integração com Google Maps
+                    Rua Antonio Hojas, 1-105<br />
+                    Jardim Helena - Bauru/SP
                   </p>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Rua+Antonio+Hojas+1-105+Jardim+Helena+Bauru+SP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-4 bg-primary text-white px-4 py-2 rounded-lg text-sm hover:bg-primary/90 transition-colors"
+                  >
+                    Ver no Google Maps
+                  </a>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="mt-12 text-center">
-            <div className="bg-zener-blue p-8 rounded-lg text-white">
+            <div className="bg-primary p-8 rounded-lg text-white">
               <h3 className="text-2xl font-bold mb-4">
-                Atendemos toda a Grande São Paulo
+                Atendemos Bauru e toda a região
               </h3>
               <p className="text-lg">
-                Instalação, manutenção e suporte técnico em toda a região metropolitana
+                Instalação, manutenção e suporte técnico para residências, comércios e indústrias
               </p>
             </div>
           </div>

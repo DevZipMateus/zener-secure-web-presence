@@ -25,13 +25,13 @@ const HeroSection = () => {
           <Shield className="w-20 h-20 mx-auto mb-6 text-white/90" />
           
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Proteção Total para<br />
-            <span className="text-zener-primary-light">Seu Patrimônio</span>
+            ZENER<br />
+            <span className="text-zener-primary-light">Fortalecendo a Sua Segurança</span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">
-            Mais de 20 anos oferecendo soluções completas em segurança eletrônica
-            para residências e empresas em São Paulo
+            Empresa sólida especializada em controle de segurança eletrônica e elétrica<br />
+            para indústrias, comércios, residências e condomínios em Bauru e região
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

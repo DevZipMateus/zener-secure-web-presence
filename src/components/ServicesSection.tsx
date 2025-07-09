@@ -1,37 +1,47 @@
-import { Camera, Shield, Lock, Eye, Home, Settings } from "lucide-react";
+import { Camera, Shield, Lock, Zap, Radio, Phone, DoorClosed, Settings } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: <Camera className="w-8 h-8 text-zener-blue" />,
-      title: "CFTV",
-      description: "Sistemas de circuito fechado de televisão com câmeras de alta resolução, gravação digital e monitoramento remoto."
+      icon: <Shield className="w-8 h-8 text-primary" />,
+      title: "Sistema de Alarme",
+      description: "Sistemas de alarme residencial e empresarial com sensores de movimento, abertura e tecnologia anti-jamming para máxima segurança."
     },
     {
-      icon: <Shield className="w-8 h-8 text-zener-blue" />,
-      title: "Alarmes",
-      description: "Sistemas de alarme residencial e empresarial com sensores de movimento, abertura e tecnologia anti-jamming."
+      icon: <Camera className="w-8 h-8 text-primary" />,
+      title: "Sistema de Câmera (CFTV)",
+      description: "Circuito fechado de televisão com câmeras de alta resolução, gravação digital e monitoramento remoto 24 horas."
     },
     {
-      icon: <Lock className="w-8 h-8 text-zener-blue" />,
-      title: "Controle de Acesso",
-      description: "Sistemas biométricos, cartões de proximidade e códigos para controle de entrada em residências e empresas."
+      icon: <DoorClosed className="w-8 h-8 text-primary" />,
+      title: "Automatização de Portão",
+      description: "Sistemas automatizados para portões residenciais e empresariais com controle remoto e sensores de segurança."
     },
     {
-      icon: <Eye className="w-8 h-8 text-zener-blue" />,
-      title: "Monitoramento",
-      description: "Central de monitoramento 24 horas com resposta rápida e comunicação direta com forças de segurança."
+      icon: <Lock className="w-8 h-8 text-primary" />,
+      title: "Fechadura Elétrica",
+      description: "Fechaduras eletrônicas modernas com controle de acesso por cartão, código ou biometria para total segurança."
     },
     {
-      icon: <Home className="w-8 h-8 text-zener-blue" />,
-      title: "Automação",
-      description: "Sistemas de automação residencial integrados com segurança, iluminação e controle de portões."
+      icon: <Zap className="w-8 h-8 text-primary" />,
+      title: "Cerca Elétrica",
+      description: "Instalação de cercas elétricas para perímetro com sistema de desenergização e alarme integrado."
     },
     {
-      icon: <Settings className="w-8 h-8 text-zener-blue" />,
-      title: "Manutenção",
-      description: "Serviços de manutenção preventiva e corretiva com equipe técnica especializada e peças originais."
+      icon: <Radio className="w-8 h-8 text-primary" />,
+      title: "Interfone",
+      description: "Sistemas de interfone para comunicação entre portaria e residências ou apartamentos com qualidade de áudio."
+    },
+    {
+      icon: <Phone className="w-8 h-8 text-primary" />,
+      title: "Vídeo Porteiro",
+      description: "Sistemas de vídeo porteiro com tela colorida, visão noturna e controle de abertura remota."
+    },
+    {
+      icon: <Settings className="w-8 h-8 text-primary" />,
+      title: "Eletricista Residencial e Predial",
+      description: "Serviços elétricos completos para residências e prédios com equipe qualificada e materiais de qualidade."
     }
   ];
 
@@ -44,7 +54,7 @@ const ServicesSection = () => {
               Nossos Serviços
             </h2>
             <p className="text-xl text-zener-gray max-w-2xl mx-auto">
-              Soluções completas em segurança eletrônica para proteger o que mais importa
+              Soluções completas em segurança eletrônica e elétrica para proteger o que mais importa
             </p>
           </div>
 
@@ -71,7 +81,7 @@ const ServicesSection = () => {
           </div>
 
           <div className="mt-16 text-center">
-            <div className="bg-zener-blue-light p-8 rounded-lg text-white">
+            <div className="bg-primary p-8 rounded-lg text-white">
               <h3 className="text-2xl font-bold mb-4">
                 Precisa de um orçamento personalizado?
               </h3>
@@ -80,7 +90,7 @@ const ServicesSection = () => {
               </p>
               <button
                 onClick={() => document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" })}
-                className="bg-white text-zener-blue-dark hover:bg-gray-100 font-semibold px-8 py-3 rounded-lg transition-colors"
+                className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-3 rounded-lg transition-colors"
               >
                 Solicitar Orçamento
               </button>
