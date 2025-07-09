@@ -63,9 +63,9 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				zener: {
-					blue: 'hsl(var(--zener-blue))',
-					'blue-light': 'hsl(var(--zener-blue-light))',
-					'blue-dark': 'hsl(var(--zener-blue-dark))',
+					primary: 'hsl(var(--zener-primary))',
+					'primary-light': 'hsl(var(--zener-primary-light))',
+					'primary-dark': 'hsl(var(--zener-primary-dark))',
 					gray: 'hsl(var(--zener-gray))',
 					'gray-light': 'hsl(var(--zener-gray-light))',
 					success: 'hsl(var(--zener-success))',

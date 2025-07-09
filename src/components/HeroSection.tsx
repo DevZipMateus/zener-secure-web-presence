@@ -12,7 +12,7 @@ const HeroSection = () => {
   return (
     <section 
       id="inicio" 
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-zener-blue-light to-zener-blue-dark text-white relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-zener-primary-light to-zener-primary-dark text-white relative overflow-hidden"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
@@ -26,7 +26,7 @@ const HeroSection = () => {
           
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Proteção Total para<br />
-            <span className="text-zener-blue-light">Seu Patrimônio</span>
+            <span className="text-zener-primary-light">Seu Patrimônio</span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">
@@ -38,7 +38,7 @@ const HeroSection = () => {
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="bg-white text-zener-blue-dark hover:bg-white/90 font-semibold px-8 py-6 text-lg"
+              className="bg-white text-zener-primary-dark hover:bg-white/90 font-semibold px-8 py-6 text-lg"
             >
               Solicitar Orçamento
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -47,7 +47,7 @@ const HeroSection = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-zener-blue-dark font-semibold px-8 py-6 text-lg"
+              className="border-white text-white hover:bg-white hover:text-zener-primary-dark font-semibold px-8 py-6 text-lg"
               onClick={() => document.getElementById("servicos")?.scrollIntoView({ behavior: "smooth" })}
             >
               Nossos Serviços
