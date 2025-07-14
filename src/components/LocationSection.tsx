@@ -1,3 +1,4 @@
+
 import { MapPin, Phone, Clock, Mail } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -15,98 +16,75 @@ const LocationSection = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="space-y-8">
-              <Card className="border-0 shadow-lg">
-                <CardContent className="p-6">
-                  <div className="flex items-start space-x-4">
-                    <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="text-lg font-semibold text-foreground mb-2">
-                        Endereço
-                      </h3>
-                      <p className="text-zener-gray">
-                        Rua Antonio Hojas, 1-105<br />
-                        Jardim Helena - Bauru, SP<br />
-                        CEP: 17033-260
-                      </p>
-                    </div>
+          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            <Card className="border-0 shadow-lg">
+              <CardContent className="p-6">
+                <div className="flex items-start space-x-4">
+                  <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="text-lg font-semibold text-foreground mb-2">
+                      Endereço
+                    </h3>
+                    <p className="text-zener-gray">
+                      Rua Antonio Hojas, 1-105<br />
+                      Jardim Helena - Bauru, SP<br />
+                      CEP: 17033-260
+                    </p>
                   </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-0 shadow-lg">
-                <CardContent className="p-6">
-                  <div className="flex items-start space-x-4">
-                    <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="text-lg font-semibold text-foreground mb-2">
-                        Telefone
-                      </h3>
-                      <p className="text-zener-gray">
-                        (14) 99833-2104<br />
-                        WhatsApp disponível
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-0 shadow-lg">
-                <CardContent className="p-6">
-                  <div className="flex items-start space-x-4">
-                    <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="text-lg font-semibold text-foreground mb-2">
-                        E-mail
-                      </h3>
-                      <p className="text-zener-gray">
-                        zener_segurancaeletronica@hotmail.com
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-0 shadow-lg">
-                <CardContent className="p-6">
-                  <div className="flex items-start space-x-4">
-                    <Clock className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="text-lg font-semibold text-foreground mb-2">
-                        Horário de Atendimento
-                      </h3>
-                      <p className="text-zener-gray">
-                        Segunda à Sexta: 8h às 18h<br />
-                        Sábado: 8h às 12h<br />
-                        Emergências: 24h
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-square bg-zener-gray-light flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-                  <p className="text-zener-gray">Mapa Interativo</p>
-                  <p className="text-sm text-zener-gray mt-2">
-                    Rua Antonio Hojas, 1-105<br />
-                    Jardim Helena - Bauru/SP
-                  </p>
-                  <a
-                    href="https://www.google.com/maps/search/?api=1&query=Rua+Antonio+Hojas+1-105+Jardim+Helena+Bauru+SP"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block mt-4 bg-primary text-white px-4 py-2 rounded-lg text-sm hover:bg-primary/90 transition-colors"
-                  >
-                    Ver no Google Maps
-                  </a>
                 </div>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg">
+              <CardContent className="p-6">
+                <div className="flex items-start space-x-4">
+                  <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="text-lg font-semibold text-foreground mb-2">
+                      Telefone
+                    </h3>
+                    <p className="text-zener-gray">
+                      (14) 99833-2104<br />
+                      WhatsApp disponível
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg">
+              <CardContent className="p-6">
+                <div className="flex items-start space-x-4">
+                  <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="text-lg font-semibold text-foreground mb-2">
+                      E-mail
+                    </h3>
+                    <p className="text-zener-gray">
+                      zener_segurancaeletronica@hotmail.com
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg">
+              <CardContent className="p-6">
+                <div className="flex items-start space-x-4">
+                  <Clock className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="text-lg font-semibold text-foreground mb-2">
+                      Horário de Atendimento
+                    </h3>
+                    <p className="text-zener-gray">
+                      Segunda à Sexta: 8h às 18h<br />
+                      Sábado: 8h às 12h<br />
+                      Emergências: 24h
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           <div className="mt-12 text-center">

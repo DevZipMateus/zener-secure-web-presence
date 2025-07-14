@@ -1,4 +1,5 @@
-import { Shield, Phone, Mail, MapPin } from "lucide-react";
+
+import { Shield, Phone, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -71,7 +72,7 @@ const Footer = () => {
                   <span className="text-gray-300">zener_segurancaeletronica@hotmail.com</span>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <MapPin className="w-4 h-4 text-gray-300 mt-1 flex-shrink-0" />
+                  <div className="w-4 h-4 mt-1 flex-shrink-0"></div>
                   <span className="text-gray-300">
                     Rua Antonio Hojas, 1-105<br />
                     Jardim Helena - Bauru/SP
