@@ -34,7 +34,7 @@ const ProductsSection = () => {
     },
     {
       image: "/lovable-uploads/a809d1b0-f669-4072-a611-1990276bc528.png",
-      title: "Motor para Portão",
+      title: "Motor deslizante",
       description: "Motor deslizante para portões com controles remotos e sistema de segurança."
     },
     {
@@ -59,8 +59,8 @@ const ProductsSection = () => {
     },
     {
       image: "/lovable-uploads/687649d6-610a-4c81-96cd-b5087d271840.png",
-      title: "Fio para Cerca Elétrica",
-      description: "Fio específico para cerca elétrica com alta resistência e isolamento."
+      title: "concertina",
+      description: ""
     }
   ];
 
