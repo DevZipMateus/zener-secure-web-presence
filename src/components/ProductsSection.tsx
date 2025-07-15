@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const ProductsSection = () => {
@@ -34,7 +35,7 @@ const ProductsSection = () => {
     },
     {
       image: "/lovable-uploads/a809d1b0-f669-4072-a611-1990276bc528.png",
-      title: "Motor deslizante",
+      title: <span className="notranslate">Motor deslizante</span>,
       description: "Motor deslizante para portões com controles remotos e sistema de segurança."
     },
     {
@@ -59,7 +60,7 @@ const ProductsSection = () => {
     },
     {
       image: "/lovable-uploads/687649d6-610a-4c81-96cd-b5087d271840.png",
-      title: "concertina",
+      title: <span className="notranslate">concertina</span>,
       description: ""
     }
   ];
@@ -84,7 +85,7 @@ const ProductsSection = () => {
                   <div className="aspect-square mb-4 bg-white rounded-lg p-4 flex items-center justify-center">
                     <img 
                       src={product.image} 
-                      alt={product.title}
+                      alt={typeof product.title === 'string' ? product.title : 'Product image'}
                       className="max-w-full max-h-full object-contain"
                     />
                   </div>
