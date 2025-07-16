@@ -1,5 +1,6 @@
 
 import { Shield, Phone, Mail } from "lucide-react";
+import NoTranslate from "@/components/ui/no-translate";
 
 const Footer = () => {
   return (
@@ -11,11 +12,13 @@ const Footer = () => {
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
                 <Shield className="w-8 h-8 text-white" />
-                <span className="text-2xl font-bold">ZENER</span>
+                <span className="text-2xl font-bold">
+                  <NoTranslate as="span">ZENER</NoTranslate>
+                </span>
               </div>
               <p className="text-gray-300 leading-relaxed mb-6">
-                A ZENER é uma empresa sólida que atua no controle de segurança eletrônica e elétrica 
-                para indústrias, comércios, residências e condomínios em Bauru e região. 
+                A <NoTranslate as="span">ZENER</NoTranslate> é uma empresa sólida que atua no controle de segurança eletrônica e elétrica 
+                para indústrias, comércios, residências e condomínios em <NoTranslate as="span">Bauru</NoTranslate> e região. 
                 Nosso objetivo é promover soluções integradas com produtos inovadores.
               </p>
             </div>
@@ -65,17 +68,21 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Phone className="w-4 h-4 text-gray-300" />
-                  <span className="text-gray-300">(14) 99833-2104</span>
+                  <span className="text-gray-300">
+                    <NoTranslate as="span">(14) 99833-2104</NoTranslate>
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-4 h-4 text-gray-300" />
-                  <span className="text-gray-300">zener_segurancaeletronica@hotmail.com</span>
+                  <span className="text-gray-300">
+                    <NoTranslate as="span">zener_segurancaeletronica@hotmail.com</NoTranslate>
+                  </span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-4 h-4 mt-1 flex-shrink-0"></div>
                   <span className="text-gray-300">
-                    Rua Antonio Hojas, 1-105<br />
-                    Jardim Helena - Bauru/SP
+                    <NoTranslate as="span">Rua Antonio Hojas, 1-105</NoTranslate><br />
+                    <NoTranslate as="span">Jardim Helena - Bauru/SP</NoTranslate>
                   </span>
                 </div>
               </div>
@@ -84,7 +91,7 @@ const Footer = () => {
 
           <div className="border-t border-gray-600 mt-8 pt-8 text-center">
             <p className="text-gray-300">
-              © 2024 ZENER Segurança Eletrônica. Todos os direitos reservados.
+              © 2024 <NoTranslate as="span">ZENER</NoTranslate> Segurança Eletrônica. Todos os direitos reservados.
             </p>
           </div>
         </div>

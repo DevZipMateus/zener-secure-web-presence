@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import WhatsAppIcon from "@/components/ui/whatsapp-icon";
+import NoTranslate from "@/components/ui/no-translate";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -80,7 +81,7 @@ Mensagem: ${formData.message}`;
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Entre em Contato
+              <NoTranslate as="span">Entre em Contato</NoTranslate>
             </h2>
             <p className="text-xl text-zener-gray max-w-2xl mx-auto">
               Solicite seu orçamento gratuito e descubra como podemos fortalecer a sua segurança
@@ -105,10 +106,10 @@ Mensagem: ${formData.message}`;
                         {method.icon}
                         <div>
                           <h4 className="text-lg font-semibold text-foreground">
-                            {method.title}
+                            <NoTranslate as="span">{method.title}</NoTranslate>
                           </h4>
                           <p className="text-zener-gray">
-                            {method.description}
+                            <NoTranslate as="span">{method.description}</NoTranslate>
                           </p>
                         </div>
                       </div>
@@ -178,7 +179,7 @@ Mensagem: ${formData.message}`;
                       className="w-full bg-primary hover:bg-primary/90 text-white py-3"
                     >
                       <Send className="w-4 h-4 mr-2" />
-                      Enviar via WhatsApp
+                      <NoTranslate as="span">Enviar via WhatsApp</NoTranslate>
                     </Button>
                   </form>
                 </CardContent>

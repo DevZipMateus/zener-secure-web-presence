@@ -1,5 +1,7 @@
+
 import { Camera, Shield, Lock, Zap, Radio, Phone, DoorClosed, Settings } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import NoTranslate from "@/components/ui/no-translate";
 
 const ServicesSection = () => {
   const services = [
@@ -51,7 +53,7 @@ const ServicesSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Nossos Serviços
+              <NoTranslate as="span">Nossos Serviços</NoTranslate>
             </h2>
             <p className="text-xl text-zener-gray max-w-2xl mx-auto">
               Soluções completas em segurança eletrônica e elétrica para proteger o que mais importa
@@ -67,7 +69,7 @@ const ServicesSection = () => {
                       {service.icon}
                     </div>
                     <CardTitle className="text-xl font-bold text-foreground">
-                      {service.title}
+                      <NoTranslate as="span">{service.title}</NoTranslate>
                     </CardTitle>
                   </div>
                 </CardHeader>

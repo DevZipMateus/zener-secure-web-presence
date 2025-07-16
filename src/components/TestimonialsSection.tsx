@@ -2,6 +2,7 @@
 import { Star, Quote } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import WhatsAppIcon from "@/components/ui/whatsapp-icon";
+import NoTranslate from "@/components/ui/no-translate";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -34,7 +35,7 @@ const TestimonialsSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-4">
-              Depoimentos
+              <NoTranslate as="span">Depoimentos</NoTranslate>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Veja o que nossos clientes falam sobre nossos serviços
@@ -55,22 +56,22 @@ const TestimonialsSection = () => {
                   </div>
                   
                   <p className="text-muted-foreground mb-6 italic leading-relaxed">
-                    "{testimonial.text}"
+                    "{testimonial.text.replace('ZENER', '')}<NoTranslate as="span">ZENER</NoTranslate>{testimonial.text.includes('ZENER') ? testimonial.text.split('ZENER')[1] : ''}"
                   </p>
                   
                   <div className="border-t pt-4">
                     <div className="flex items-center justify-between">
                       <div>
                         <p className="font-semibold text-foreground">
-                          {testimonial.name}
+                          <NoTranslate as="span">{testimonial.name}</NoTranslate>
                         </p>
                         <p className="text-sm text-muted-foreground">
-                          {testimonial.location}
+                          <NoTranslate as="span">{testimonial.location}</NoTranslate>
                         </p>
                       </div>
                       <div className="text-right">
                         <p className="text-sm text-primary font-medium">
-                          {testimonial.service}
+                          <NoTranslate as="span">{testimonial.service}</NoTranslate>
                         </p>
                       </div>
                     </div>
@@ -82,7 +83,7 @@ const TestimonialsSection = () => {
 
           <div className="text-center mt-12">
             <p className="text-muted-foreground mb-4">
-              Quer compartilhar sua experiência com a ZENER?
+              Quer compartilhar sua experiência com a <NoTranslate as="span">ZENER</NoTranslate>?
             </p>
             <a
               href="https://wa.me/5514998332104?text=Gostaria%20de%20deixar%20um%20depoimento%20sobre%20os%20serviços%20da%20ZENER"

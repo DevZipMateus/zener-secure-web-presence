@@ -1,5 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import NoTranslate from "@/components/ui/no-translate";
 
 const ProductsSection = () => {
   const products = [
@@ -35,7 +36,7 @@ const ProductsSection = () => {
     },
     {
       image: "/lovable-uploads/a809d1b0-f669-4072-a611-1990276bc528.png",
-      title: <span className="notranslate">Motor deslizante</span>,
+      title: "Motor deslizante",
       description: "Motor deslizante para portões com controles remotos e sistema de segurança."
     },
     {
@@ -60,7 +61,7 @@ const ProductsSection = () => {
     },
     {
       image: "/lovable-uploads/687649d6-610a-4c81-96cd-b5087d271840.png",
-      title: <span className="notranslate">concertina</span>,
+      title: "concertina",
       description: ""
     }
   ];
@@ -71,7 +72,7 @@ const ProductsSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Nossos Produtos
+              <NoTranslate as="span">Nossos Produtos</NoTranslate>
             </h2>
             <p className="text-xl text-zener-gray max-w-2xl mx-auto">
               Produtos de alta qualidade para segurança eletrônica e automação residencial
@@ -85,12 +86,12 @@ const ProductsSection = () => {
                   <div className="aspect-square mb-4 bg-white rounded-lg p-4 flex items-center justify-center">
                     <img 
                       src={product.image} 
-                      alt={typeof product.title === 'string' ? product.title : 'Product image'}
+                      alt={product.title}
                       className="max-w-full max-h-full object-contain"
                     />
                   </div>
                   <CardTitle className="text-lg font-bold text-foreground text-center">
-                    {product.title}
+                    <NoTranslate as="span">{product.title}</NoTranslate>
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="p-4 pt-0">

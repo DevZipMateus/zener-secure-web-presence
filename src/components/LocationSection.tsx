@@ -1,6 +1,7 @@
 
 import { MapPin, Phone, Clock, Mail } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import NoTranslate from "@/components/ui/no-translate";
 
 const LocationSection = () => {
   return (
@@ -9,10 +10,10 @@ const LocationSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Nossa Localização
+              <NoTranslate as="span">Nossa Localização</NoTranslate>
             </h2>
             <p className="text-xl text-zener-gray max-w-2xl mx-auto">
-              Estamos localizados em Bauru, atendendo toda a região com excelência
+              Estamos localizados em <NoTranslate as="span">Bauru</NoTranslate>, atendendo toda a região com excelência
             </p>
           </div>
 
@@ -26,9 +27,9 @@ const LocationSection = () => {
                       Endereço
                     </h3>
                     <p className="text-zener-gray">
-                      Rua Antonio Hojas, 1-105<br />
-                      Jardim Helena - Bauru, SP<br />
-                      CEP: 17033-260
+                      <NoTranslate as="span">Rua Antonio Hojas, 1-105</NoTranslate><br />
+                      <NoTranslate as="span">Jardim Helena - Bauru, SP</NoTranslate><br />
+                      <NoTranslate as="span">CEP: 17033-260</NoTranslate>
                     </p>
                   </div>
                 </div>
@@ -44,8 +45,8 @@ const LocationSection = () => {
                       Telefone
                     </h3>
                     <p className="text-zener-gray">
-                      (14) 99833-2104<br />
-                      WhatsApp disponível
+                      <NoTranslate as="span">(14) 99833-2104</NoTranslate><br />
+                      <NoTranslate as="span">WhatsApp</NoTranslate> disponível
                     </p>
                   </div>
                 </div>
@@ -61,7 +62,7 @@ const LocationSection = () => {
                       E-mail
                     </h3>
                     <p className="text-zener-gray">
-                      zener_segurancaeletronica@hotmail.com
+                      <NoTranslate as="span">zener_segurancaeletronica@hotmail.com</NoTranslate>
                     </p>
                   </div>
                 </div>
@@ -90,7 +91,7 @@ const LocationSection = () => {
           <div className="mt-12 text-center">
             <div className="bg-primary p-8 rounded-lg text-white">
               <h3 className="text-2xl font-bold mb-4">
-                Atendemos Bauru e toda a região
+                Atendemos <NoTranslate as="span">Bauru</NoTranslate> e toda a região
               </h3>
               <p className="text-lg">
                 Instalação, manutenção e suporte técnico para residências, comércios e indústrias

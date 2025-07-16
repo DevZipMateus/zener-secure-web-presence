@@ -1,5 +1,7 @@
+
 import { CheckCircle, Award, Users, Shield } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import NoTranslate from "@/components/ui/no-translate";
 
 const AboutSection = () => {
   const stats = [
@@ -26,7 +28,7 @@ const AboutSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Sobre a ZENER
+              Sobre a <NoTranslate as="span">ZENER</NoTranslate>
             </h2>
             <p className="text-xl text-zener-gray max-w-2xl mx-auto">
               Empresa sólida especializada em segurança eletrônica e elétrica para total proteção
@@ -39,7 +41,7 @@ const AboutSection = () => {
                 Nossa Missão
               </h3>
               <p className="text-zener-gray leading-relaxed mb-6">
-                A ZENER é uma empresa sólida que atua no controle de segurança eletrônica e elétrica 
+                A <NoTranslate as="span">ZENER</NoTranslate> é uma empresa sólida que atua no controle de segurança eletrônica e elétrica 
                 para indústrias, comércios, residências e condomínios em Bauru e região.
               </p>
               <p className="text-zener-gray leading-relaxed">
@@ -61,7 +63,9 @@ const AboutSection = () => {
               ].map((item, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-zener-success flex-shrink-0" />
-                  <span className="text-zener-gray">{item}</span>
+                  <span className="text-zener-gray">
+                    <NoTranslate as="span">{item}</NoTranslate>
+                  </span>
                 </div>
               ))}
             </div>
@@ -75,7 +79,7 @@ const AboutSection = () => {
                     {stat.icon}
                   </div>
                   <h4 className="text-2xl font-bold text-foreground mb-2">
-                    {stat.title}
+                    <NoTranslate as="span">{stat.title}</NoTranslate>
                   </h4>
                   <p className="text-zener-gray">
                     {stat.description}
