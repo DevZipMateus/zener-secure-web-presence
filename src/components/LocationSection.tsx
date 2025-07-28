@@ -1,4 +1,3 @@
-
 import { MapPin, Phone, Clock, Mail } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import NoTranslate from "@/components/ui/no-translate";
@@ -29,7 +28,7 @@ const LocationSection = () => {
                     <p className="text-zener-gray">
                       <NoTranslate as="span">Rua Antonio Hojas, 1-105</NoTranslate><br />
                       <NoTranslate as="span">Jardim Helena - Bauru, SP</NoTranslate><br />
-                      <NoTranslate as="span">CEP: 17033-260</NoTranslate>
+                      <NoTranslate as="span">CEP: 17022-864</NoTranslate>
                     </p>
                   </div>
                 </div>
