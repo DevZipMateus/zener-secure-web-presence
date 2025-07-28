@@ -31,27 +31,27 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
-          <Shield className="w-20 h-20 mx-auto mb-6 text-white" />
+          <Shield className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-6 text-white" />
           
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
             <NoTranslate as="span">ZENER</NoTranslate><br />
             <span className="text-zener-primary-light">Fortalecendo a Sua Segurança</span>
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">
-            Empresa sólida especializada em controle de segurança eletrônica e elétrica<br />
+          <p className="text-lg sm:text-xl md:text-2xl mb-8 text-white/90 leading-relaxed px-4">
+            Empresa sólida especializada em controle de segurança eletrônica e elétrica<br className="hidden sm:block" />
             para indústrias, comércios, residências e condomínios em Bauru e região
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button onClick={scrollToContact} size="lg" className="bg-zener-primary text-white hover:bg-zener-primary-dark font-semibold px-8 py-6 text-lg">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
+            <Button onClick={scrollToContact} size="lg" className="bg-zener-primary text-white hover:bg-zener-primary-dark font-semibold px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg">
               Solicitar Orçamento
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
             </Button>
             
             <Button variant="outline" size="lg" onClick={() => document.getElementById("servicos")?.scrollIntoView({
               behavior: "smooth"
-            })} className="border-white text-white hover:text-zener-primary-dark font-semibold px-8 py-6 text-lg bg-green-600 hover:bg-green-500">
+            })} className="border-white text-white hover:text-zener-primary-dark font-semibold px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg bg-green-600 hover:bg-green-500">
               Nossos Serviços
             </Button>
           </div>

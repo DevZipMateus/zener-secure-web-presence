@@ -30,24 +30,24 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section id="depoimentos" className="py-20 bg-zener-gray-light">
+    <section id="depoimentos" className="py-12 sm:py-16 lg:py-20 bg-zener-gray-light">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
               <NoTranslate as="span">Depoimentos</NoTranslate>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
               Veja o que nossos clientes falam sobre nossos serviços
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="bg-background border-border hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-8">
+                <CardContent className="p-6 sm:p-8">
                   <div className="flex items-center mb-4">
-                    <Quote className="w-8 h-8 text-primary mr-3" />
+                    <Quote className="w-6 h-6 sm:w-8 sm:h-8 text-primary mr-3" />
                     <div className="flex">
                       {[...Array(testimonial.rating)].map((_, i) => (
                         <Star key={i} className="w-4 h-4 fill-zener-warning text-zener-warning" />
@@ -55,22 +55,22 @@ const TestimonialsSection = () => {
                     </div>
                   </div>
                   
-                  <p className="text-muted-foreground mb-6 italic leading-relaxed">
+                  <p className="text-sm sm:text-base text-muted-foreground mb-6 italic leading-relaxed">
                     "{testimonial.text.replace('ZENER', '')}<NoTranslate as="span">ZENER</NoTranslate>{testimonial.text.includes('ZENER') ? testimonial.text.split('ZENER')[1] : ''}"
                   </p>
                   
                   <div className="border-t pt-4">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="font-semibold text-foreground">
+                        <p className="text-sm sm:text-base font-semibold text-foreground">
                           <NoTranslate as="span">{testimonial.name}</NoTranslate>
                         </p>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-xs sm:text-sm text-muted-foreground">
                           <NoTranslate as="span">{testimonial.location}</NoTranslate>
                         </p>
                       </div>
                       <div className="text-right">
-                        <p className="text-sm text-primary font-medium">
+                        <p className="text-xs sm:text-sm text-primary font-medium">
                           <NoTranslate as="span">{testimonial.service}</NoTranslate>
                         </p>
                       </div>
@@ -82,14 +82,14 @@ const TestimonialsSection = () => {
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-muted-foreground mb-4">
+            <p className="text-sm sm:text-base text-muted-foreground mb-4 px-4">
               Quer compartilhar sua experiência com a <NoTranslate as="span">ZENER</NoTranslate>?
             </p>
             <a
               href="https://wa.me/5514998332104?text=Gostaria%20de%20deixar%20um%20depoimento%20sobre%20os%20serviços%20da%20ZENER"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+              className="inline-flex items-center px-4 sm:px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm sm:text-base"
             >
               <WhatsAppIcon size={20} className="mr-2" />
               Deixe seu depoimento
