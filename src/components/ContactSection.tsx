@@ -76,39 +76,41 @@ Mensagem: ${formData.message}`;
   ];
 
   return (
-    <section id="contato" className="py-20 bg-background">
+    <section id="contato" className="py-12 sm:py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
               <NoTranslate as="span">Entre em Contato</NoTranslate>
             </h2>
-            <p className="text-xl text-zener-gray max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-zener-gray max-w-2xl mx-auto px-4">
               Solicite seu orçamento gratuito e descubra como podemos fortalecer a sua segurança
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-bold text-foreground mb-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            <div className="order-2 lg:order-1">
+              <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 sm:mb-6">
                 Fale Conosco
               </h3>
-              <p className="text-zener-gray mb-8">
+              <p className="text-zener-gray mb-6 sm:mb-8 text-sm sm:text-base">
                 Nossa equipe está pronta para atender você. Entre em contato através dos canais abaixo 
                 ou preencha o formulário e retornaremos em breve.
               </p>
 
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 {contactMethods.map((method, index) => (
                   <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer" onClick={method.action}>
-                    <CardContent className="p-6">
-                      <div className="flex items-center space-x-4">
-                        {method.icon}
-                        <div>
-                          <h4 className="text-lg font-semibold text-foreground">
+                    <CardContent className="p-4 sm:p-6">
+                      <div className="flex items-center space-x-3 sm:space-x-4">
+                        <div className="flex-shrink-0">
+                          {method.icon}
+                        </div>
+                        <div className="min-w-0 flex-1">
+                          <h4 className="text-base sm:text-lg font-semibold text-foreground">
                             <NoTranslate as="span">{method.title}</NoTranslate>
                           </h4>
-                          <p className="text-zener-gray">
+                          <p className="text-zener-gray text-sm sm:text-base break-words">
                             <NoTranslate as="span">{method.description}</NoTranslate>
                           </p>
                         </div>
@@ -119,15 +121,15 @@ Mensagem: ${formData.message}`;
               </div>
             </div>
 
-            <div>
+            <div className="order-1 lg:order-2">
               <Card className="border-0 shadow-lg">
-                <CardHeader>
-                  <CardTitle className="text-2xl font-bold text-foreground">
+                <CardHeader className="p-4 sm:p-6">
+                  <CardTitle className="text-xl sm:text-2xl font-bold text-foreground">
                     Solicite seu Orçamento
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                <CardContent className="p-4 sm:p-6 pt-0">
+                  <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                     <div>
                       <Input
                         name="name"
@@ -135,7 +137,7 @@ Mensagem: ${formData.message}`;
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="border-zener-gray-light focus:border-primary"
+                        className="border-zener-gray-light focus:border-primary text-sm sm:text-base"
                       />
                     </div>
 
@@ -147,7 +149,7 @@ Mensagem: ${formData.message}`;
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="border-zener-gray-light focus:border-primary"
+                        className="border-zener-gray-light focus:border-primary text-sm sm:text-base"
                       />
                     </div>
 
@@ -158,7 +160,7 @@ Mensagem: ${formData.message}`;
                         value={formData.phone}
                         onChange={handleChange}
                         required
-                        className="border-zener-gray-light focus:border-primary"
+                        className="border-zener-gray-light focus:border-primary text-sm sm:text-base"
                       />
                     </div>
 
@@ -170,13 +172,13 @@ Mensagem: ${formData.message}`;
                         onChange={handleChange}
                         required
                         rows={4}
-                        className="border-zener-gray-light focus:border-primary"
+                        className="border-zener-gray-light focus:border-primary text-sm sm:text-base resize-none"
                       />
                     </div>
 
                     <Button
                       type="submit"
-                      className="w-full bg-primary hover:bg-primary/90 text-white py-3"
+                      className="w-full bg-primary hover:bg-primary/90 text-white py-2 sm:py-3 text-sm sm:text-base"
                     >
                       <Send className="w-4 h-4 mr-2" />
                       <NoTranslate as="span">Enviar via WhatsApp</NoTranslate>
