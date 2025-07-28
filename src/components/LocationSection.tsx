@@ -79,7 +79,6 @@ const LocationSection = () => {
                     <p className="text-zener-gray">
                       Segunda à Sexta: 8h às 18h<br />
                       Sábado: 8h às 12h<br />
-                      Emergências: 24h
                     </p>
                   </div>
                 </div>
